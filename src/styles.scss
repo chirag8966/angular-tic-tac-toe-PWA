@@ -1,1 +1,19 @@
+@import 'themes';
+
+@import '~@nebular/theme/styles/globals';
+
+@include nb-install() {
+  @include nb-theme-global();
+};
 /* You can add global styles to this file, and also import other style files */
+
+button{
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+.disabled{
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
